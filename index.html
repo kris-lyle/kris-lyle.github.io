@@ -1,0 +1,695 @@
+<html>
+  <head>
+    
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem !important;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.5rem !important;
+}
+
+h4 {
+  font-size: 1.5rem !important;
+}
+
+h5 {
+  font-size: 1.2rem !important;
+}
+
+.logo-font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em !important;
+}
+
+.container {
+  width: 90%;
+}
+
+.row {
+  padding: 10px, 0px, 10px, 0px;
+}
+
+@media(max-width: 600px) {
+  .section {
+    height: 70vh;
+  }
+}
+
+.section {
+  height: 100vh;
+}
+
+.continuity-top {
+  height: 50vh;
+}
+.continuity-bottom {
+  height: 85vh;
+  background: #ff6f00;
+}
+
+.card.horizontal {
+  min-height: 200px;
+}
+
+blockquote {
+  border-left-color: #ff6f00;
+}
+
+.card.package {
+  border-color: #ff6f00;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+.primary-overlay {
+  background: rgba(255, 111, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.secondary-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.admin-bg {
+  background: url("../img/admin-typing.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  position: relative;
+}
+
+.gears-bg {
+  background: url("../img/gears_img1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+}
+
+.pipe-bg {
+  background: url("../img/pipe-jobsite.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+}
+
+.card-panel {
+  opacity: .85;
+  color: white;
+}
+
+
+/* .divider {
+  height: 3px;
+  background-color: #ff6f00;
+  margin: 20px;
+} */
+
+
+.input-field .prefix.active {
+  color: #ff6f00;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ff6f00;
+  -webkit-box-shadow: 0 1px 0 0 #ff6f00;
+          box-shadow: 0 1px 0 0 #ff6f00;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #ff6f00;
+}
+
+/*
+@media only screen and (min-width: 601px) 
+  .row .col.m6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+*/
+
+    </style>
+
+  </head>
+  <body>
+
+  <!--------------- NAVBAR --------------->
+  <div class="navbar-fixed">
+    <nav class="grey darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+        <a href="#" class="brand-logo">AOD</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a class="waves-effect waves-light btn white black-text"><i class="material-icons left">message</i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--------------- HERO --------------->
+
+  <section class="section admin-bg continuity-bottom">
+    <div class="primary-overlay valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5">
+            <h1>Admin <i>(on-demand)</i></h1>
+            <h4>Get more out of Procore by doing less</h4>
+          </div>
+          <div class="col s12 m6 offset-m1">
+            <div class="card-panel black lighten-2 hoverable">
+                <p class="flow-text">
+                Admin (on-demand) is a subscription-based service that allows you to sub out the dirty work so your time in app is time well spent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <!--------------- LET'S FACE IT --------------->
+
+  <section class="section continuity-top valign-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <h3>Let's face it...</h3>
+        </div>
+      
+        <div class="col s12 m6 l3">
+          <blockquote class="flow-text">
+            You probably don’t want to hire a full-time Procore Admin
+          </blockquote>
+        </div>
+      
+        <div class="col s12 m6 l3">
+          <blockquote class="flow-text">
+            You'd love to give some time back to your PMs
+          </blockquote>
+        </div>
+      
+        <div class="col s12 m6 l3">
+          <blockquote class="flow-text">
+            You'd prefer to pay for what you need when you need
+          </blockquote>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!--------------- HOW IT WORKS --------------->
+
+  <section class="section pipe-bg">
+    <div class="secondary-overlay valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <h2 class="white-text">How it works</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image">
+                <i class="small left material-icons">looks_one</i>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h4>Pick a plan</h4>
+                  <p>Sign up for a monthly subscription of admin hours</p>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light amber darken-4"><i class="material-icons">list</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image">
+                <i class="small left material-icons">looks_two</i>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h4>Create an admin</h4>
+                  <p>Setup a user that can be your on-demand Procore admin</p>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light amber darken-4"><i class="material-icons">person_add</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image">
+                <i class="small left material-icons">looks_3</i>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h4>Send an email</h4>
+                  <p>Pass on what you need done via email</p>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light amber darken-4"><i class="material-icons">send</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image">
+                <i class="small left material-icons">looks_4</i>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h4>Consider it done</h4>
+                  <p>We'll get it done and notify you within 24hrs</p>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light amber darken-4"><i class="material-icons">done_all</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- CONTAINER -->
+    </div>
+  </section>
+
+  <!--------------- PACKAGES --------------->
+
+  <section class="section valign-wrapper">
+    <div class="container center-align">
+      <h2 class="">Pick a plan</h2>
+      <div class="flow-text">Adjust as needed. Cancel anytime.</div>
+        <br>
+        <br>
+        
+      <!-- PACKAGE TABLES -->
+      <div class="row">
+
+        <div class="col s12 m4 l4">
+          <div class="card package grey lighten-3 hoverable">
+              <div class="card-image amber darken-4">
+              <i class="large material-icons activator">done</i>
+            </div>
+            <div class="card-content center-align grey lighten-3 activator">
+              <h3>10 hours</h3>
+              <span><h5>$1250 / month</5><i class="material-icons right">expand_less</i></span>
+            </div>
+            <div class="card-reveal" style="display: none; transform: translateY(0%);">
+              <span class="card-title left-align">Basic Details<i class="material-icons right">close</i></span>
+              <p class="left-align">The perfect amount of hours to test out the service. Also great for smaller businesses or those that are in maintenance mode.</p> 
+              <p class="left-align">Don't forget, you can always bump up the hours when you need.</p>
+            </div>
+            <div class="card-action grey lighten-3">
+              <a class="waves-effect waves-light btn-large amber darken-4">Get Started</a>
+            </div>
+          </div>
+        </div> 
+          
+        <div class="col s12 m4 l4">
+          <div class="card package grey lighten-3 hoverable">
+              <div class="card-image amber darken-4">
+              <i class="large material-icons activator">done_all</i>
+            </div>
+            <div class="card-content center-align grey lighten-3 activator">
+              <h3>20 hours</h3>
+              <span><h5>$2300 / month</5><i class="material-icons right">expand_less</i></span>
+            </div>
+            <div class="card-reveal" style="display: none; transform: translateY(0%);">
+              <span class="card-title left-align">Basic Details<i class="material-icons right">close</i></span>
+              <p class="left-align">20 Hours split across an entire month (roughly 5 hrs/wk) is the sweet spot for a company that's getting full use of Procore and wants to offload the bulk of admin tasks so their users can get back to using the software.</p> 
+              <p class="left-align">At a 20 hour block purchase, you get an 8% discount off the base rate.</p>
+            </div>
+            <div class="card-action grey lighten-3">
+              <a class="waves-effect waves-light btn-large amber darken-4">Get Started</a>
+            </div>
+          </div>
+        </div> 
+
+        <div class="col s12 m4 l4">
+          <div class="card package grey lighten-3 hoverable">
+              <div class="card-image amber darken-4">
+              <i class="large material-icons activator">done_outline</i>
+            </div>
+            <div class="card-content center-align grey lighten-3 activator">
+              <h3>40 hours</h3>
+              <span><h5>$4000 / month</5><i class="material-icons right">expand_less</i></span>
+            </div>
+            <div class="card-reveal" style="display: none; transform: translateY(0%);">
+              <span class="card-title left-align">Basic Details<i class="material-icons right">close</i></span>
+              <p class="left-align">At 40 hours a month (roughly 10 hrs/wk), you're not playing around. Your entire company relies on Procore to execute more efficiently and you can't afford to have your users slowed down by being administrators of the software.</p> 
+              <p class="left-align">At 4K for 40 hours of assistance per month, that's 20% off the base "a la carte" price.</p>
+            </div>
+            <div class="card-action grey lighten-3">
+              <a class="waves-effect waves-light btn-large amber darken-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <br>
+      <br>
+
+      <!-- FAQs -->
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+
+          <!-- Modal Trigger -->
+          <button class="waves-effect waves-light waves-black btn-flat btn-large grey lighten-4 modal-trigger" href="#modal1"><i class="material-icons right">expand_more</i>Questions?</button>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content col s12 m8 offset-m2">
+              <h4>FAQs</h4>
+              <ul class="collapsible left-align">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">pause</i>
+                    Can I start and stop whenever I want?
+                  </div>
+                  <div class="collapsible-body">
+                    <span>Of course. There are no fees and you are free to start and stop your admin on-demand subscription whenever you would like. After all, it is “on-demand.”</span>
+                  </div>
+                </li>      
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">hourglass_empty</i>
+                    What happens if I need more hours?          
+                  </div>
+                  <div class="collapsible-body">
+                    <span>Extra hours that exceed your purchased cap for the month will be charged a la carte at the price you’re locked in at. Next month you can reconsider bumping up if that’s what makes sense.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">timer</i>
+                    How long will it take to complete a task?          
+                  </div>
+                  <div class="collapsible-body">
+                    <span>Usually we can knock out your requests within a few hours, but we guarantee a 24hr turn around time at the most. As you can expect it varies by scope of the task. Creating a dozen users will get done faster than uploading a new drawings or specs.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">person_add_disabled</i>
+                    How do I remove you from our Procore environment if we cancel our subscription?
+                  </div>
+                  <div class="collapsible-body">
+                    <span>That’s easy. Just deactivate our user-account and we won’t be able to sign back in. We can’t deactivate ourself though; so you’ll have to do that. You can find instructions here.
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">person_add</i>
+                    How do I reactivate my admin account if I decide to resume my subscription?
+                  </div>
+                  <div class="collapsible-body">
+                    <span>It’s super simple. Just reverse the steps you took to remove me. You can find these instructions here.</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------- SAMPLE TASKS --------------->
+
+  <section class="section gears-bg">
+    <div class="secondary-overlay valign-wrapper">
+      <div class="container center-align white-text">
+        <h2>What counts as "admin work"?</h2>
+        <div class="flow-text">More than you think. Here's a sample...</div>
+          <br>
+          <br>
+          
+        <!-- 1ST ICON ROW -->
+        <div class="row left-align">
+
+          <div class="col s12 m4 l3 offset-l2 valign-wrapper">
+            <i class="material-icons small left" style="color: #ff6f00">add_circle_outline</i>
+            <p>Create a project</p>
+          </div>
+
+          <div class="col s12 m4 l3 valign-wrapper">
+            <i class="material-icons small left" style="color: #ff6f00">library_add</i>
+            <p>Upload drawings</p>
+          </div>
+
+          <div class="col s12 m4 l3 valign-wrapper">
+            <i class="material-icons small left" style="color: #ff6f00">bar_chart</i>
+            <p>Create a custom report</p>
+          </div>
+
+        </div>
+        
+        <!-- 2ND ICON ROW -->
+        <div class="row left-align">
+
+            <div class="col s12 m4 l3 offset-l2 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">monetization_on</i>
+              <p>Import cost codes</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">person_add</i>
+            <p>Create new users</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">format_list_bulleted</i>
+              <p>Configure daily logs</p>
+            </div>
+  
+        </div>
+
+        <!-- 3RD ICON ROW -->
+        <div class="row left-align">
+
+            <div class="col s12 m4 l3 offset-l2 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">add_location</i>
+              <p>Manage locations</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">category</i>
+              <p>Create project templates</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">layers</i>
+              <p>Revision control</p>
+            </div>
+  
+        </div>
+
+        <!-- 4TH ICON ROW -->
+        <div class="row left-align">
+
+            <div class="col s12 m4 l3 offset-l2 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">photo_library</i>
+              <p>Manage photo albums</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">visibility</i>
+              <p>Permission control</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">low_priority</i>
+              <p>Submittal workflows</p>
+            </div>
+  
+        </div>
+
+        <!-- 5TH ICON ROW -->
+        <div class="row left-align">
+
+            <div class="col s12 m4 l3 offset-l2 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">storage</i>
+              <p>Project extract</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">group</i>
+              <p>Create distribution groups</p>
+            </div>
+  
+            <div class="col s12 m4 l3 valign-wrapper">
+              <i class="material-icons small left" style="color: #ff6f00">ballot</i>
+              <p>Turn on/off tools</p>
+            </div>
+  
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--------------- CTA --------------->
+
+  <section class="section valign-wrapper">
+    <div class="container center">
+      <h1>What are you waiting for?</h1>
+      <div class="flow-text">Start getting more out of Procore by doing less.</div>
+      <br>
+      <br>
+      <form>
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+              <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Name</label>
+              </div>
+              
+              <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input
+                    id="email"
+                    type="email"
+                    class="validate"/>
+                  <label data-error="Invalid" data-success="Valid" for="email">Email</label>
+              </div>
+
+              <div class="input-field">
+                  <i class="material-icons prefix">business</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Company</label>
+              </div>
+
+              <div class="input-field">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">What would you like to learn more about?</label>
+              </div>
+            </div>  
+          </div>
+
+        <div class="row">
+            <div class="col s6 offset-s3">
+              <input type="submit" value="Submit" class="btn-large amber darken-4" />
+            </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</body>
+
+<footer class="page-footer grey darken-4">
+  <div class="footer-copyright">
+    <div class="container center">
+    <div>© 2019 Para Solutions | Admin (On-Demand) is not affiliated with or endorsed by Procore Technologies, Inc.
+    </div>
+  </div>
+</footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+  <script>
+
+
+
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+    //* JAVASCRIPT STARTS HERE *//
+
+    $('.modal').modal();
+
+    });
+
+  </script>
+  <script>
+
+/*
+    $var(".dropdown-trigger").dropdown();
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var elems = document.querySelectorAll(".collapsible");
+      var instances = M.Collapsible.init(elems, options);
+    });
+
+*/
+
+  </script>
+</html>
