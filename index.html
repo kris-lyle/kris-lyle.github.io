@@ -1,6 +1,7 @@
 <html>
   <head>
-    
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -67,8 +68,14 @@ h5 {
   padding: 10px, 0px, 10px, 0px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .section {
   min-height: 100vh;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .continuity-top {
@@ -82,6 +89,9 @@ h5 {
 
 .card.horizontal {
   min-height: 200px;
+  margin-bottom: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 blockquote {
@@ -103,6 +113,8 @@ blockquote {
   width: 100%;
   min-height: 85vh;
   overflow: hidden;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .secondary-overlay {
@@ -113,6 +125,8 @@ blockquote {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .admin-bg {
@@ -121,6 +135,8 @@ blockquote {
   background-position: center;
   min-height: 85vh;
   position: relative;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .gears-bg {
@@ -128,6 +144,8 @@ blockquote {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
   position: relative;
 }
 
@@ -213,7 +231,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
           <div class="row">
             <div class="col s12 m5">
               <h1>Admin <i>(on-demand)</i></h1>
-              <h4>Get more out of Procore by doing less</h4>
+              <h4>Get more out of Procore by doing less</h4><br><br>
             </div>
             <div class="col s12 m6 offset-m1">
               <div class="card-panel black lighten-2 hoverable">
@@ -280,7 +298,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
                     <h4>Pick a plan</h4>
                     <p>Sign up for a monthly subscription of admin hours</p>
                   </div>
-                  <a class="btn-floating halfway-fab waves-effect waves-light amber darken-4"><i class="material-icons">list</i></a>
+                  <a class="btn-floating halfway-fab waves-effect waves-light amber darken-4"><i class="material-icons">event</i></a>
                 </div>
               </div>
             </div>
